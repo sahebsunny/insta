@@ -67,7 +67,7 @@ app.post('/upload', upload.single('image'), async (req, res) => {
       // Instagram posting logic
       // Note: It's against Instagram's ToS to use unofficial APIs to post
       ig.state.generateDevice('sushobhan.pramanik'); // Replace with your Instagram username
-      await ig.account.login('sushobhan.pramanik', 'QAZqaz123..'); // Replace with your Instagram username and password
+      await ig.account.login('sushobhan.pramanik', '..'); // Replace with your Instagram username and password
 
       const publishResult = await ig.publish.photo({
         file: image.path, // file path to your image
